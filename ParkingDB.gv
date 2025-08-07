@@ -1,0 +1,24 @@
+digraph ParkingDB {
+	bgcolor=white
+	node [color=lightblue fontname=Arial fontsize=12 shape=rectangle style=filled]
+	User [label="User
+- user_no (PK)
+- name
+- phone_no
+- email"]
+	Vehicle [label="Vehicle
+- vehicle_no (PK)
+- license_plate
+- user_no (FK)"]
+	Parking_Spot [label="Parking_Spot
+- spot_no (PK)
+- floor_no
+- is_occupied
+- vehicle_no (FK)
+- start_time
+- end_time"]
+	edge [arrowhead=normal fontsize=10]
+	User -> Vehicle [label="1 owns 1" constraint=true]
+	Vehicle -> Parking_Spot [label="1 occupies 1" constraint=true]
+	Parking_Spot -> Vehicle [label=References style=dashed]
+}

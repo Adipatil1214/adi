@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.default.compilerPath": "",
+    "files.associations": {
+        "second.C": "cpp",
+        "ADIDTEX4.C": "cpp"
+    }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="author" content="Aditya">
+    <meta name="desciption" content="this timepass thing ig">
+    <link rel="icon" href="bird2.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>Personal Things</title>
+  </head>
+
+  <body>
+    <header>
+    <h1>Planning</h1>
+    <hr>
+    <nav>
+      <ul>
+        <li><a href="#scedule">Daily life</a></li>
+        <li><a href="#Learned">Language learned</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+    <figure>
+      <img
+        src="img/html5new.png"
+        alt="Html5 logo"
+        title="IDK WHY"
+        width="200"
+      >
+      <figcaption>i like this</figcaption>
+    </figure>
+    </header>
+  
+    <main>
+    <section id="Scedule">
+      <h2>My Daily Scedule</h2>
+      <p>HERE</p>
+      <ol>
+        <li>I wake Up.</li>
+        <li>
+          I go to <em> bed</em>. <br>
+          <figure>
+            <img src="img/bed.png" alt="bed logo" title="i like " width="200">
+            <figcaption>i go to bed</figcaption>
+          </figure>
+        </li>
+        <li>
+          I go to college
+          <abbr title="Datta Meghe Collge of Engineering">
+            <a href="https://www.dmce.ac.in/">DMCE</a></abbr
+          >.
+        </li>
+      </ol>
+        <aside>
+            <details>
+                <summary>
+                    guess what i do after that?
+                </summary>
+                <p>
+                  YES, i <mark>sleep again</mark>
+                </p>
+            </details>
+        </aside>
+      
+      <p>here is the address:</p>
+      <address>
+        Datta Meghe College of Engineering, Sector-3, Airoli, Navi Mumbai, MH.
+      </address>
+      <br>
+      <table>
+        <caption>Time Schedule</caption>
+        <thead>
+        <th>Time</th>
+        <th>Activity</th>
+        </thead>
+        <tbody>
+         <tr>
+              <td>
+                  <time datetime="09:30">9:30am</time>-<time datetime="17:45">5:45pm</time>
+              </td>
+              <td>College</td>
+         </tr>
+         <tr>
+              <td>
+                  <time datetime="23:00">11pm</time>-<time datetime="06:30">6:30am</time>
+              </td>
+              <td>Sleeptime</td>
+         </tr>
+         <tr>
+            <td rowspan="3">All other time</td>
+            <td>Eating</td>
+         </tr>
+         <tr>
+            <td>gaming</td>
+         </tr>
+         <tr><td>other</td></tr>
+        </tbody>
+      </table>
+      <hr>
+      <article id="contact">
+        <h2>Contact me</h2>
+        <p>i dont like hear but here</p>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset> <legend> Personal Info</legend>
+          <p>
+          <label for="firstName">First name</label>
+          <input type="text" name="firstName" id="firstName"
+          placeholder="e.g. Aditya" autocomplete="on" required>
+        </p>
+        <p>
+          <label for="lastName">Last name</label>
+          <input type="text" name="lastName" id="lastName"
+          placeholder="e.g. Patil" autocomplete="on" required>
+        </p>
+        <p>
+          <label for="password">password</label>
+          <input type="password" name="password" id="password"
+          placeholder="Tough password" required>
+        </p>
+        <p>
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone"
+          placeholder="e.g.1234567890" 
+          pattern="[0-9]{10}" required>
+        </p>
+        <p>
+          <label for="decade">Fav decade</label>
+          <input type="number" name="decade" id="decade"
+           min="2000" max="2025" step="1" value="2020"
+         required>
+        </p>
+
+
+
+        <p>
+          <label for="season">favurite season</label>
+          <select name="season" id="season" multiple size="">
+            <optgroup label="normals">
+            <option value="summer">Summer</option>
+            <option value="rain">Rain</option>
+            <option value="winter" selected>Winter</option>
+          </optgroup>
+          <optgroup label="new">
+            <option value="autume">Autume</option>
+            <option value="other">Other</option>
+          </optgroup>
+          </select>
+        </p>
+
+      </fieldset>
+      <br>
+      <fieldset> what is your favurite food
+      <p>
+        <input type="radio" name="food" id="tacos" value="tacos">
+        <label for="tacos">Tacos</label>
+      </p>
+      <p>
+        <input type="radio" name="food" id="pizza" value="pizza">
+        <label for="pizza">Pizza</label>
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend> Do you have Pets</legend>
+      <p>
+        <input type="checkbox" name="pets" id="dog" value="dog">
+        <label for="dog">Dog</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" id="cat" value="cat">
+        <label for="cat">Cat</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" id="fish" value="fish">
+        <label for="fish">Fish</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" id="other" value="other">
+        <label for="other">others</label>
+      </p>
+      </fieldset>
+      <fieldset>
+        <legend>Send me a note</legend>
+        <label for="message">your message</label>
+        <br>
+        <textarea name="message" id="message" placeholder="Type Here"></textarea>
+
+      </fieldset>
+      <br>
+      
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="submit" formaction="https://httpbin.org/post" formmethod="post"> post</button>
+
+
+
+    
+
+          </form>
+
+      </article>
+
+
+    </section>
+    <hr>
+    <!--Learn more code-->
+    <section id="Learned">
+      <h2>Learned Language</h2>
+      <p>Python. <br>Java. <br>C. <br><strong>C#</strong>.</p>
+    </section>
+  </main>
+    <hr>
+    <footer>
+    &lt;&lt;&lt; &copy; <a href="about.html">Aditya Patil</a> &gt;&gt;&gt;
+    <br>
+    <a href="#">Back to top</a>
+  </footer>  
+</body>
+</html>
